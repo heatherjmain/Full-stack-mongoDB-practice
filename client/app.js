@@ -1,7 +1,7 @@
 var requestHelper = require("./helpers/request_helper.js")
 
 window.addEventListener("DOMContentLoaded", function() {
-  requestHelper.getRequest("http://localhost:3000/api/instructions"),
+  requestHelper.getRequest("http://localhost:3000/api/instructions",
   function(instructions) {
 
     var mainDiv = document.getElementById("main")
@@ -31,5 +31,5 @@ window.addEventListener("DOMContentLoaded", function() {
     })
 
     mainDiv.appendChild(list)
-  }
+  })
 })

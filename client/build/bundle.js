@@ -70,7 +70,7 @@
 var requestHelper = __webpack_require__(1)
 
 window.addEventListener("DOMContentLoaded", function() {
-  requestHelper.getRequest("http://localhost:3000/api/instructions"),
+  requestHelper.getRequest("http://localhost:3000/api/instructions",
   function(instructions) {
 
     var mainDiv = document.getElementById("main")
@@ -100,7 +100,7 @@ window.addEventListener("DOMContentLoaded", function() {
     })
 
     mainDiv.appendChild(list)
-  }
+  })
 })
 
 
